@@ -1,0 +1,23 @@
+[
+    {
+        "image":"https://you-sk.id/laughing/1.gif",
+        "size":{
+            "x":270,
+            "y":180
+        }
+    },
+    {
+        "image":"https://you-sk.id/laughing/2.gif",
+        "size":{
+            "x":498,
+            "y":361
+        }
+    },
+    {
+        "image":"https://you-sk.id/laughing/3.gif",
+        "size":{
+            "x":498,
+            "y":498
+        }
+    }
+]
