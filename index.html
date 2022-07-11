@@ -1,13 +1,14 @@
-<!--Experimenting-->
+<!--Experimenting, I'm new to web development so be patient with me lmao-->
 <!DOCTYPE html>
 <html>
     <audio controls autoplay loop>
         <source src="xd.ogg" type="audio/ogg">
         <source src="xd.mp3" type="audio/mpeg">
     </audio>
+    <head>
     <script type="application/javascript">
         function draw() {
-            fetch('./laugh.json').then(resp => {
+            fetch('./laugh.json').then(async (resp) => {
                 let json = await resp.json()
                 json.forEach(el => {
                     var ctx = null;
