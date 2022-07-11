@@ -1,46 +1,6 @@
-<!--Experimenting, I'm new to web development so be patient with me lmao-->
 <!DOCTYPE html>
 <html>
-    <audio controls autoplay>
-        <source src="xd.ogg" type="audio/ogg">
-        <source src="xd.mp3" type="audio/mpeg">
-    </audio>
-    <head>
-    <script type="application/javascript">
-        function draw() {
-            fetch('./laugh.json').then(async (resp) => {
-                let json = await resp.json()
-                json.forEach(el => {
-                    let ctx = null;
-                    let x_icon = 0;
-                    let y_icon = 0;
-                    let stepX = 1;
-                    let stepY = 1;
-                    let size_x = el.size.x;
-                    let size_y = el.size.y;
-                    let canvas_size_x = window.innerWidth;
-                    let canvas_size_y = window.innerHeight;
-                    let anim_img = null;
-                    function myAnimation() {
-                        ctx.clearRect(0, 0, canvas_size_x, canvas_size_y);
-                        if (x_icon < 0 || x_icon > canvas_size_x - size_x) {stepX = -stepX; }
-                        if (y_icon < 0 || y_icon > canvas_size_y - size_y) {stepY = -stepY; }
-                        x_icon += stepX;
-                        y_icon += stepY;
-                        ctx.drawImage(anim_img, x_icon, y_icon);
-                    }
-                    let canvas = document.getElementById('canvas');
-                    ctx = canvas.getContext('2d');
-                    anim_img = new Image(size_x, size_y);
-                    anim_img.onload = function() { setInterval(myAnimation, Math.random(10,20)); }
-                    anim_img.src = el.image;
-                })
-            })
-        }
-    </script>
-    <link rel="stylesheet" href="index.css">
-    </head>
-    <body onload="draw();">
-        <canvas id="canvas" style="border:solid 1px;"></canvas>
+    <body>
+        <b>i give up</b>
     </body>
 </html>
