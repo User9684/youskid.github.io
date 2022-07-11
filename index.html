@@ -32,7 +32,7 @@
                     let canvas = document.getElementById('canvas');
                     ctx = canvas.getContext('2d');
                     anim_img = new Image(size_x, size_y);
-                    anim_img.onload = function() { setInterval('myAnimation()', 10); }
+                    anim_img.onload = function() { setInterval(myAnimation, 10); }
                     anim_img.src = el.image;
                 })
             })
