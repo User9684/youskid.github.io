@@ -1,11 +1,12 @@
 body{
-    margin:40px
-    auto;
-    max-width:650px;
-    line-height:1.6;
-    font-size:18px;
-    color:#444;
-    padding:010px
+    color: rgb(8, 8, 8);
+    background-color: #fdfdfe;
+    font-size: 18px;
+    font: 1.2rem/1.5 Century Gothic, sans-serif;
+    max-width: 600px;
+    max-width: 55ch;
+    margin: 0 auto;
+    padding: 2.5rem 1.75rem;
 }
 h1,h2,h3{
     line-height:1.2
